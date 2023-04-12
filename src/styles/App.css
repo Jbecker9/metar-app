@@ -1,0 +1,12 @@
+:root{
+  --background-color: #0353a4;
+  --border-color: #0466c8;
+}
+
+body {
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  background-color: var(--background-color);
+}

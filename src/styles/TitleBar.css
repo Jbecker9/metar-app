@@ -1,0 +1,10 @@
+.TitleBar-div{
+    width: 100%;
+    border: 2px solid var(--border-color);
+}
+
+.TitleBar-title{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif
+}
