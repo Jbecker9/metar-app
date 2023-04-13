@@ -12,10 +12,9 @@ function Search(){
 
     function handleSubmit(event){
         event.preventDefault()
-        console.log(import.meta.env.VITE_AVIATION_API_KEY)
-        // fetch(`https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&hoursBeforeNow=3&mostRecent=true&stationString=${searchParamaters}`)
-        // .then((response) => response.json())
-        // .then((data) => console.log(data))
+        fetch(`https://api.checkwx.com/metar/${searchParamaters}?x-api-key=${import.meta.env.VITE_AVIATION_API_KEY}`)
+        .then((response) => response.json())
+        .then((metarData) => console.log(metarData.data[0]))
     }
 
     return(
