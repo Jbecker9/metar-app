@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles/Search.css"
-import env from "react-dotenv"
 
 function Search(){
     const [searchParamaters, setSearchParamaters] = useState('')
