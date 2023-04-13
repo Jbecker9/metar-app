@@ -11,12 +11,14 @@ function Search(){
         fetch(`https://api.checkwx.com/metar/${searchParams}/decoded?x-api-key=${import.meta.env.VITE_AVIATION_API_KEY}`)
         .then((response) => response.json())
         .then((metarData) => setAirportData(metarData.data[0]))
+        let form = document.getElementById("searchForm")
+        form.reset()
     }
 
     return(
         <div className="Search-div">
-            <form onSubmit={handleSubmit}>
-                <input onChange={(event) => setSearchParams(event.target.value)} className="Search-input" placeholder="Search ICAO, IATA, Name..."/>
+            <form onSubmit={handleSubmit} id="searchForm">
+                <input onChange={(event) => setSearchParams(event.target.value)} className="Search-input" placeholder="Search ICAO, IATA, Name..." id="Search-input"/>
                 <button className="Search-button">
                     <i className="fa-solid fa-plane fa-inverse fa-2x"></i>
                 </button>

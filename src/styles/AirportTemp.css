@@ -1,0 +1,11 @@
+.AirportTemp-container{
+    display: flex;
+    margin-left: 10px;
+}
+
+.AirportTemp-text{
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+

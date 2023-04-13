@@ -1,0 +1,16 @@
+.AirportTitle-container{
+    margin: 10px auto;
+    padding: 5px;
+    width: 50%;
+    border: 2px solid var(--border-color);
+    border-radius: 2px;
+    background-color: var(--border-color);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.AirportTitle-title{
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #e7e7e7;
+}
+
