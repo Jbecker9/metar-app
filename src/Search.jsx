@@ -18,7 +18,7 @@ function Search(){
     return(
         <div className="Search-div">
             <form onSubmit={handleSubmit} id="searchForm">
-                <input onChange={(event) => setSearchParams(event.target.value)} className="Search-input" placeholder="Search ICAO, IATA, Name..." id="Search-input"/>
+                <input onChange={(event) => setSearchParams(event.target.value)} className="Search-input" placeholder="Search ICAO..." id="Search-input"/>
                 <button className="Search-button">
                     <i className="fa-solid fa-plane fa-inverse fa-2x"></i>
                 </button>

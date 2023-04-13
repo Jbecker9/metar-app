@@ -23,6 +23,7 @@ button{
     color: white;
     font-size: 1.8rem;
     width: 85%;
+    text-align: center;
 }
 
 .Search-input::placeholder{
@@ -31,8 +32,7 @@ button{
 }
 
 .Search-button{
-    margin: 0 auto;
-    float: right;
+    margin-right: 0px;
     cursor: pointer;
     width: 10%;
 }
