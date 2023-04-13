@@ -1,0 +1,9 @@
+.RawMetar-container{
+    background-color: white;
+    padding: 15px;
+    width: fit-content;
+    margin: 25px auto;
+    text-align: center;
+    border-radius: 2px;
+    font-family: "droid-sans-mono", monospace;
+}
