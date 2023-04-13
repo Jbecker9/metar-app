@@ -1,6 +1,6 @@
 .TitleBar-div{
     width: 100%;
-    border: 2px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
 }
 
 .TitleBar-title{

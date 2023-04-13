@@ -1,0 +1,33 @@
+input{
+    border-style: none; 
+    background: transparent; 
+    outline: none;
+}
+
+button{
+    background: none; 
+    border: none; 
+    outline: none;
+}
+
+.Search-div{
+    width: 100%;
+    max-width: 425px;
+    margin: 25px auto;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    background: var(--border-color);
+}
+
+.Search-input{
+    color: white;
+    font-size: 1.8rem;
+    width: 85%;
+}
+
+.Search-button{
+    margin: 0 auto;
+    float: right;
+    cursor: pointer;
+    width: 10%;
+}
