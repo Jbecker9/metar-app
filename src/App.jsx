@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './styles/App.css'
 import TitleBar from './TitleBar'
 import Search from './Search'
+import AirportInfo from './AirportInfo'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <TitleBar />
       <Search />
+      <AirportInfo />
     </div>
 )}
 
