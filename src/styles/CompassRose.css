@@ -1,0 +1,117 @@
+.compass{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.compass .number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-family: "droid-sans-mono", monospace;
+}
+
+.degree0{
+    --rotation: 0deg;
+}
+
+.degree22point5{
+    --rotation: 22.5deg;
+}
+
+.degree45{
+    --rotation: 45deg;
+}
+
+.degree67point5{
+    --rotation: 67.5deg;
+}
+
+.degree90{
+    --rotation: 90deg;
+}
+
+.degree112point5{
+    --rotation: 112.5deg;
+}
+
+.degree135{
+    --rotation: 135deg;
+}
+
+.degree157point5{
+    --rotation: 157.5deg;
+}
+
+.degree180{
+    --rotation: 180deg;
+}
+
+.degree202point5{
+    --rotation: 202.5deg;
+}
+
+.degree225{
+    --rotation: 225deg;
+}
+
+.degree247point5{
+    --rotation: 247.5deg;
+}
+
+.degree270{
+    --rotation: 270deg;
+}
+
+.degree292point5{
+    --rotation: 292.5deg;
+}
+
+.degree315{
+    --rotation: 315deg;
+}
+
+.degree337point5{
+    --rotation: 337.5deg;
+}
+
+.compass .needleHand{
+    --compass-rotation: 0deg;
+    display: inline-block;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 15px;
+    height: 40%;
+    background-color: var(--border-color);
+    transform: translateX(-50%) rotate(calc(var(--compass-rotation)));
+    /* transform: rotate(calc(var(--rotation) * 1deg)); */
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform-origin: bottom;
+}
+
+.compass::after{
+    content: '';
+    position: absolute;
+    background-color: var(--border-color);
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.degrees{
+    rotate: 90deg;
+    font-family: "droid-sans-mono", monospace;
+    margin: 2px;
+}

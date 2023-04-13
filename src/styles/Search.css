@@ -13,7 +13,8 @@ button{
 .Search-div{
     width: 100%;
     max-width: 425px;
-    margin: 25px auto;
+    margin: auto;
+    margin-top: 25px;
     border-radius: 2px;
     padding: 1rem 2rem;
     background: var(--border-color);

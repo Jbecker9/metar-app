@@ -1,6 +1,8 @@
 :root{
   --background-color: #0353a4;
   --border-color: #0466c8;
+  --rotation: 0;
+  --needle-rotation: 0deg;
 }
 
 body {
