@@ -4,9 +4,19 @@
 }
 
 .AirportTemp-text{
-    margin-left: 2px;
+    transition: .25s;
     cursor: pointer;
     font-family: "droid-sans-mono", monospace;
 }
 
+.AirportTemp-spacing{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.AirportTemp-scales{
+    display: flex;
+    margin-left: 3px;
+    color: #0858a8;
+}
 

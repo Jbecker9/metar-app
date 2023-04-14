@@ -1,5 +1,6 @@
 .AirportLocation-container{
     display: flex;
+    text-align: center;
     width: 100%;
     align-items: center;
     justify-content: center;

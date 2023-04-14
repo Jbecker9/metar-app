@@ -7,7 +7,7 @@ function AirportWind(){
 
     return(
         <div className="AirportWind-card">
-            <h3 className="windText"> { airportData.wind.speed_kts } knots - { airportData.wind.degrees } Degrees - { airportData.wind.gust_kts ?  `Gust: ${ airportData.wind.gust_kts } knots` : null } </h3>
+            <h3 className="windText"> { airportData.wind.speed_kts } knots - { airportData.wind.degrees } Degrees { airportData.wind.gust_kts ?  `- Gust: ${ airportData.wind.gust_kts } knots` : null } </h3>
         </div>
 )};
 
