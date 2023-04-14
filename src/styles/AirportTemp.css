@@ -12,14 +12,14 @@
 .AirportTemp-spacing{
     margin-left: 3px;
     margin-right: 3px;
+    color: var(--background-color);
 }
 
 .AirportTemp-scales{
     display: flex;
     margin-left: 3px;
-    color: #0858a8;
 }
 
-.tempCelsius{
-    color: #e7e7e7;
+#fahrenheit{
+    color: var(--background-color);
 }

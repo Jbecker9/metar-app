@@ -5,16 +5,18 @@ import "../styles/AirportTemp.css"
 function AirportTemp(){
     const { airportData } = useContext(MetarContext)
     const [fahrenheit, setFahrenheit] = useState(false)
-    const fahrenheitElement = document.getElementById("fahrenheit")
-    const celsiusElement = document.getElementById("celsius")
-
+    
     function renderFahrenheit(){
+        const fahrenheitElement = document.getElementById("fahrenheit")
+        const celsiusElement = document.getElementById("celsius")
         setFahrenheit(true)
         fahrenheitElement.style.color = "#e7e7e7"
         celsiusElement.style.color = "var(--background-color)"
     }
 
     function renderCelsius(){
+        const fahrenheitElement = document.getElementById("fahrenheit")
+        const celsiusElement = document.getElementById("celsius")
         setFahrenheit(false)
         celsiusElement.style.color = "#e7e7e7"
         fahrenheitElement.style.color = "var(--background-color)"
