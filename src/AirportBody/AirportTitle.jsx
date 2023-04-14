@@ -7,10 +7,10 @@ function AirportTitle(){
     const { airportData } = useContext(MetarContext)
     
     return(
-    <div className="AirportTitle-container">
-        <h2 className="AirportTitle-title">{airportData.station.name} ({airportData.icao})</h2>
-        <AirportLocation />
-    </div> 
-)}
+        <div className="AirportTitle-card">
+            <h2 className="AirportTitle-title">{airportData.station.name} ({airportData.icao})</h2>
+            <AirportLocation />
+        </div>
+)};
 
 export default AirportTitle

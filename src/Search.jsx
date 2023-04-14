@@ -8,11 +8,13 @@ function Search(){
 
     function handleSubmit(event){
         event.preventDefault()
+        let form = document.getElementById("searchForm")
         fetch(`https://api.checkwx.com/metar/${searchParams}/decoded?x-api-key=${import.meta.env.VITE_AVIATION_API_KEY}`)
         .then((response) => response.json())
-        .then((metarData) => setAirportData(metarData.data[0]))
-        let form = document.getElementById("searchForm")
-        form.reset()
+        .then((metarData) => {
+            setAirportData(metarData.data[0])
+            form.reset()
+        })
     }
 
     return(
