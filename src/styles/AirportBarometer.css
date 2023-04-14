@@ -12,5 +12,12 @@
 }
 
 #inHg{
-    background-color: var(--background-color);
+    background-color: #e7e7e7;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+#mb{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
 }

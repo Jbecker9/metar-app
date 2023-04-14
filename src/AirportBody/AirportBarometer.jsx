@@ -8,7 +8,7 @@ function AirportBarometer(){
 
     function renderBaroMeasurement(event){
         setBaroMeasurement(event.target.id)
-        document.getElementById(event.target.id).style.backgroundColor = "var(--background-color)"
+        document.getElementById(event.target.id).style.backgroundColor = "#e7e7e7"
         measurements.forEach((reading) => {
             if (reading !== event.target.id){
                 document.getElementById(reading).style.backgroundColor = "var(--border-color)"
