@@ -1,0 +1,12 @@
+.AirportBarometer-container{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.AirportBarometer-button{
+    color: #e7e7e7;
+    margin: -1px;
+    background-color: var(--border-color);
+    border: 2px solid var(--background-color);
+    padding: 5px;
+}

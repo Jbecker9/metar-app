@@ -8,25 +8,25 @@ function AirportBarometerSwitch({ baroMeasurement }){
         case("inHg"):
             return( 
                 <div>
-                    <h3>{ airportData.barometer.hg }</h3>
+                    <h3>{ airportData.barometer.hg } inHg</h3>
                 </div>)
             break;
         case("hPa"):
             return(
                 <div>
-                    <h3>{ airportData.barometer.hpa }</h3>
+                    <h3>{ airportData.barometer.hpa } hPa</h3>
                 </div>)
             break;
         case("kPa"):
             return( 
                 <div>
-                    <h3>{ airportData.barometer.kpa }</h3>
+                    <h3>{ airportData.barometer.kpa } kPa</h3>
                 </div>)
             break;
         case("mb"):
             return( 
                 <div>
-                    <h3>{ airportData.barometer.mb }</h3>
+                    <h3>{ airportData.barometer.mb } mb</h3>
                 </div>)
             break;
     }
