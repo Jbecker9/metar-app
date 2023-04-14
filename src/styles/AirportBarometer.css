@@ -10,3 +10,7 @@
     border: 2px solid var(--background-color);
     padding: 5px;
 }
+
+#inHg{
+    background-color: var(--background-color);
+}

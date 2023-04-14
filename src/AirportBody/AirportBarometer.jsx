@@ -4,15 +4,27 @@ import "../styles/AirportBarometer.css"
 
 function AirportBarometer(){
     const [baroMeasurement, setBaroMeasurement] = useState("inHg")
+    const measurements = ["inHg", "hPa", "kPa", "mb"]
+
+    function renderBaroMeasurement(event){
+        setBaroMeasurement(event.target.id)
+        document.getElementById(event.target.id).style.backgroundColor = "var(--background-color)"
+        measurements.forEach((reading) => {
+            if (reading !== event.target.id){
+                document.getElementById(reading).style.backgroundColor = "var(--border-color)"
+            } else {
+            }
+        })
+    }
 
     return(
         <div className="AirportBarometer-container">
             <AirportBarometerSwitch baroMeasurement={baroMeasurement} />
             <div className="AirportBarometer-buttonContainer">
-                <button className="AirportBarometer-button" id="inHg" onClick={(event) => setBaroMeasurement(event.target.id)}>inHg</button>
-                <button className="AirportBarometer-button" id="hPa" onClick={(event) => setBaroMeasurement(event.target.id)}>hPa</button>
-                <button className="AirportBarometer-button" id="kPa" onClick={(event) => setBaroMeasurement(event.target.id)}>kPa</button>
-                <button className="AirportBarometer-button" id="mb" onClick={(event) => setBaroMeasurement(event.target.id)}>mb</button>
+                <button className="AirportBarometer-button" id="inHg" onClick={renderBaroMeasurement}>inHg</button>
+                <button className="AirportBarometer-button" id="hPa" onClick={renderBaroMeasurement}>hPa</button>
+                <button className="AirportBarometer-button" id="kPa" onClick={renderBaroMeasurement}>kPa</button>
+                <button className="AirportBarometer-button" id="mb" onClick={renderBaroMeasurement}>mb</button>
             </div>
         </div>
 )};
