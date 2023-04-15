@@ -11,6 +11,7 @@
     font-family: "droid-sans-mono", monospace;
     padding: 5px;
     transition: .2s;
+    cursor: pointer;
 }
 
 #inHg{
