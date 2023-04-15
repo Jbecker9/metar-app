@@ -1,12 +1,9 @@
-.AirportLocation-container{
-    display: flex;
-    justify-content: center;
-    color: #e7e7e7;
-    font-family: "droid-sans-mono", monospace;
+.AirportClouds-title{
+    text-decoration: underline;
+    text-align: center;
 }
 
-.AirportLocation-container{
-    display: flex;
+.AirportClouds-container{
     margin: 25px auto;
     justify-content: center;
     padding: 10px;
