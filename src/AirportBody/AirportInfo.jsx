@@ -7,7 +7,7 @@ import AirportClouds from "./AirportClouds";
 
 function AirportInfo(){
     const { airportData } = useContext(MetarContext)
-    console.log(airportData)
+    // console.log(airportData)
 
     // { airportData ? console.log(airportData) : null }
     return(

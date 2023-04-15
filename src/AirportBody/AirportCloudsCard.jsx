@@ -1,11 +1,19 @@
 import React from "react";
+import AirportCloudsImperial from "./AirportCloudsImperial";
+import AirportCloudsMetric from "./AirportCloudsMetric";
 
-function AirportCloudsCard({ cloudLevel }){
+function AirportCloudsCard({ cloudLevel, unit }){
+    // console.log(cloudLevel)
+    if (unit){
+        return(
+            <AirportCloudsImperial cloudLevel={cloudLevel} />
+        )
+    } else {
+        return(
+            <AirportCloudsMetric cloudLevel={cloudLevel} />
+        )
+    }
 
-    return(
-        <div>
-            
-        </div>
-)};
+};
 
 export default AirportCloudsCard
