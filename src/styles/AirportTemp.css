@@ -6,7 +6,11 @@
 .AirportTemp-text{
     transition: .25s;
     cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
     font-family: "droid-sans-mono", monospace;
+    border: 2px solid var(--background-color);
 }
 
 .AirportTemp-spacing{
@@ -22,4 +26,12 @@
 
 #fahrenheit{
     color: var(--background-color);
+    margin-left: -1px;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+#celsius{
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
 }

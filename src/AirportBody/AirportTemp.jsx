@@ -26,9 +26,11 @@ function AirportTemp(){
     <div className="AirportTemp-container">
         <h3> { fahrenheit ? airportData.temperature.fahrenheit : airportData.temperature.celsius } </h3>
         <div className="AirportTemp-scales">
-            <h3 id="celsius" className="AirportTemp-text tempCelsius" onClick={renderCelsius}>C</h3>
-            <h3 className="AirportTemp-spacing">/</h3>
+            <h3 id="celsius" className="AirportTemp-text" onClick={renderCelsius}>C</h3>
             <h3 id="fahrenheit" className="AirportTemp-text" onClick={renderFahrenheit}>F</h3>
+            {/* <h3 id="celsius" className="AirportTemp-text tempCelsius" onClick={renderCelsius}>C</h3>
+            <h3 className="AirportTemp-spacing">/</h3>
+            <h3 id="fahrenheit" className="AirportTemp-text" onClick={renderFahrenheit}>F</h3> */}
         </div>
     </div>
 )}
