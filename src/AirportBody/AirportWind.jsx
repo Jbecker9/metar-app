@@ -1,9 +1,19 @@
 import React, { useContext, useState } from "react";
 import { MetarContext } from "../context/Metar";
 import "../styles/AirportWind.css"
+import Compass from "cardinal-direction"
 
 function AirportWind(){
     const { airportData } = useContext(MetarContext)
+    degreeToCardinalDirection()
+
+    function degreeToCardinalDirection(){
+        const cardinalDegreeDifference = (21) + (3 / 17)
+        const denominator = 17
+        const degreeMathSort = ( airportData.wind.degrees / cardinalDegreeDifference )
+        const remainderDegree = degreeMathSort % denominator
+        console.log(remainderDegree)
+    }
 
     return(
         <div className="AirportWind-card">
