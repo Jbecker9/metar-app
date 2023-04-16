@@ -5,7 +5,7 @@ function TitleBar(){
 
     return(
         <div className="TitleBar-div">
-            <h1 className="TitleBar-title"> Quick Metar </h1>
+            <h1 className="TitleBar-title"> EZ Metar </h1>
         </div>
 )}
 
