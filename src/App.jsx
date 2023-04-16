@@ -4,6 +4,7 @@ import TitleBar from './TitleBar'
 import Search from './Search'
 import AirportInfo from './AirportBody/AirportInfo'
 import { MetarContext } from './context/Metar'
+import Disclaimer from './Disclaimer'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <TitleBar />
       <Search />
       { airportData ? <AirportInfo /> : null }
+      <Disclaimer />
     </div>
 )}
 

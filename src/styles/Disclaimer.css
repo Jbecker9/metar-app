@@ -1,0 +1,25 @@
+.Disclaimer-container{
+    border-top: 3px solid var(--border-color);
+    text-align: center;
+    margin: 25px;
+}
+
+.Disclaimer-text{
+    color: red;
+    font-family: "droid-sans-mono", monospace;
+}
+
+.Disclaimer-ownerText{
+    color: #e7e7e7;
+    font-family: "droid-sans-mono", monospace;
+}
+
+#linkedIn{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#gitHub{
+    margin-left: 5px;
+    cursor: pointer;
+}

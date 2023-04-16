@@ -9,7 +9,6 @@ function AirportInfo(){
     const { airportData } = useContext(MetarContext)
     console.log(airportData)
 
-    // { airportData ? console.log(airportData) : null }
     return(
         <div>
             <AirportTitle />
